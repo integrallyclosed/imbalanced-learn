@@ -291,8 +291,8 @@ class NearMiss(BaseMulticlassSampler):
                     n_neighbors=self.size_ngh)
 
                 sel_x, sel_y, idx_tmp = self._selection_dist_based(
-                    X,
-                    y,
+                    sub_samples_x,
+                    sub_samples_y,
                     dist_vec,
                     num_samples,
                     key,
